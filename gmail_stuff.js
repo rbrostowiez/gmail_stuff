@@ -3,7 +3,7 @@
 // @match https://mail.google.com/mail*
 // @match https://tasks.google.com/embed/*
 // @description Set Gmail font to classic view
-// @version 1.0
+// @version 1.1
 // ==/UserScript== 
 
 
@@ -92,7 +92,12 @@
     '.O4scvf {',
     'display: none !important;',
     '}',
-
+    '.PV0kIb[data-parent-task-id] .AcoHmc {',
+      'padding: 0px !important',
+    '}',
+    '.ANY6Qc {',
+      'display: none;',
+    '}'
   ].join('\n');
 
   addGlobalStyle(css, window.document);
